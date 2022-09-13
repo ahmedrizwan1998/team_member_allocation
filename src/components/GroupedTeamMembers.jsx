@@ -7,7 +7,7 @@ function GroupedTeamMembers({employees, selectedTeam, setTeam}) {
 
     function groupTeamMembers () {
         const teams = [];
-        console.log(teams)
+        
         const teamAMembers = employees.filter((employee) => employee.teamName === "Team A");
         const teamA = {team: "Team A", members: teamAMembers, collapsed: selectedTeam === "Team A"?false:true}
         teams.push(teamA);

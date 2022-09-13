@@ -96,7 +96,7 @@ function App() {
         teamName: "Team D"
       }]);
 
-      function handleTeamChange (event) {
+      function handleTeamOnChange (event) {
         setTeam(event.target.value);
       }
 
@@ -122,7 +122,7 @@ function App() {
           <Route path='/' 
                 element={<Employee employees={employees}
                 selectedTeam={selectedTeam} 
-                handleTeamChange={handleTeamChange}
+                handleTeamChange={handleTeamOnChange}
                 changeSelectedTeam={changeSelectedTeam}
                       />}>
         </Route>
